@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="background-img">
+            <img src="images/bg-main-desktop.png" alt="">
+        </div>
+        <div class="background-mobile">
+            <img src="images/bg-main-mobile.png" alt="">
+        </div>
+
+        <div class="card-display">
+            <div class="card-front">
+                <img src="images/bg-card-front.png" alt="" class="card-front-image">
+                <img src="images/card-logo.svg" alt="" class="card-front-logo">
+                <p class="card-front-number-display">0000 0000 0000 0000</p>
+                <p class="card-front-name-display">e.g. Marc Andre Ter-Stegen</p>
+                <p class="card-front-expirymonth-display">00</p>
+                <p class="card-front-expiryyear-display">00</p>
+            </div>
+            <div class="card-back">
+                <img src="images/bg-card-back.png" alt="" class="card-back-image">
+                <p class="card-back-cvc-display">000</p>
+            </div>
+        </div>
+
+        <form action="#" class="form">
+            <div class="success">
+                <img src="images/icon-complete.svg" alt="">
+                <h1>Thank you!</h1>
+                <p>We've added your card details</p>
+                <button>Continue</button>
+            </div>
+            <div class="form-container">
+                <div class="input-field">
+                    <label for="name">CARDHOLDER NAME</label>
+                    <input type="text" id="name" placeholder="e.g. Istrate Darius-Gabriel" class="card-front-name">
+                    <p class="error-name"></p>
+                </div>
+                <div class="input-field">
+                    <label for="number">CARD NUMBER</label>
+                    <input type="text" id="number" placeholder="e.g. 1234 5678 0123 0000" class="card-front-number">
+                    <p class="error-number"></p>
+                </div>
+                <div class="input-field-expiry-cvc">
+                    <div class="input-field">
+                        <label for="expiry-month expiry-year">EXP. DATE (MM/YY)</label>
+                        <input type="text" id="expiry-month" placeholder="MM" class="card-front-month">
+                        <input type="text" id="expiry-year" placeholder="YY" class="card-front-year">
+                        <p class="error-month-year"></p>
+                    </div>
+                    <div class="input-field">
+                        <label for="cvc">CVC</label>
+                        <input type="text" id="cvc" placeholder="e.g. 000" class="card-front-cvc">
+                        <p class="error-cvc"></p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="btn">Confirm</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
